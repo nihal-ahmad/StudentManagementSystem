@@ -43,14 +43,17 @@ const getData = () => {
 }
 let cardBody;
 const addCard = () => {
- 
+  document.getElementById("data").innerHTML=""
+  if(!cards.length && JSON.parse(sessionStorage.getItem("studentList"))){
+    cards.push(...JSON.parse(sessionStorage.getItem("studentList")))
+  }
     let item = JSON.parse(sessionStorage.getItem("studentList"));
     // for testing purpose only
     console.log(item);
     // **********************
 
-cardBody = document.createElement("div");
-item.forEach(el => {
+    item.forEach(el => {
+      cardBody = document.createElement("div");
     cardBody.innerHTML = `<div class="card">
     <div style="display: flex;justify-content: space-between" class="card-body">
       <div>
@@ -68,7 +71,7 @@ showData();
 })}
 
 const showData = () => {
-     
+     console.log(cardBody)
     document.getElementById("data").appendChild(cardBody);  
 }
    
