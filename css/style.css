@@ -1,0 +1,36 @@
+.nav-style {
+    background-color: #46D7AC;
+    margin-bottom: 1em;
+}
+
+.brand-style {
+ color: white;
+ font-size: 1.8em;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+.col-style1 {
+    height: 93vh;
+}
+.col-style2 {
+    height: 93vh;
+}
+.heading {
+    display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 1em;
+  font-size: 1.5em;
+  color: #0D6EFD;
+}
+.radio {
+display: flex;
+justify-content: space-between;
+
+}
+#data {
+    overflow-y: scroll;
+    max-height: 80vh;
+}
