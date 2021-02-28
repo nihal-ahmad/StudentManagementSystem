@@ -1,125 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css" >
-    
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
 
     <title>Student managment System</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <!-- Sticky Navbar -->
     <div class="nav-style sticky-top container-fluid">
-    <nav class="container-fluid brand-style">
+      <nav class="container-fluid brand-style">
         <b>Student Enrollment System</b>
-    </nav>
+      </nav>
     </div>
-<!-- Container -->
+    <!-- Container -->
 
-<div class="container-fluid">
-    <div class="row">
-      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 justify-content-center align-items-center col-style1">
+    <div class="container-fluid">
+      <div class="row">
+        <div
+          class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 justify-content-center align-items-center col-style1"
+        >
           <div class="heading">
-              <b>Student Data</b>
+            <b>Student Data</b>
           </div>
-        <form id="form" data-parsley-validate="">
+          <form id="form" data-parsley-validate="">
             <div class="mb-3 row">
-                <label for="name" class="col-sm-2 col-form-label">Name</label>
-                <div class="col-sm-10">
-                  <input type="text"  class="form-control " id="name" placeholder="Name" required="">
-                 
-                </div>
-                
-              </div>
-            <div class="mb-3 row">
-                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-                <div class="col-sm-10">
-                  <input type="email"  class="form-control " id="staticEmail" placeholder="Email" required="">
-                </div>
-              </div>
-              <div class="mb-3 row">
-                <label for="website" class="col-sm-2 col-form-label">Website</label>
-                <div class="col-sm-10">
-                  <input type="url" class="form-control " id="website" placeholder="Website" required="">
-                </div>
-              </div>
-              <div class="mb-3 row">
-                <label for="image" class="col-sm-2 col-form-label">Image Link</label>
-                <div class="col-sm-10">
-                  <input type="url" class="form-control " id="image" placeholder="Image Link" 
-                  required="">
-                </div>
-              </div>
-              <div class="mb-3 row">
-                <div class="col-2">
-                    Gender
-                </div>
-             
-                <div class="col-10 ">
-              <div class="form-check flex-start">
-                <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault1" checked>
-                <label class="form-check-label" for="flexRadioDefault1">
-                 Male
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault2" >
-                <label class="form-check-label" for="flexRadioDefault2">
-               Female
-                </label>
+              <label for="name" class="col-sm-2 col-form-label">Name</label>
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Name"
+                  required=""
+                />
               </div>
             </div>
-        </div>
-        <div class="mb-3 row">
-            <div class="col-2">
-                Skills
+            <div class="mb-3 row">
+              <label for="staticEmail" class="col-sm-2 col-form-label"
+                >Email</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="staticEmail"
+                  placeholder="Email"
+                  required=""
+                />
+              </div>
             </div>
-        <div class="col-10 radio">
-        <div class="form-check ">
-            <input class="form-check-input" type="checkbox" name="skills" value="" id="flexCheckDefault" checked>
-            <label class="form-check-label" for="flexCheckDefault">
-              Java
-            </label>
-          </div>
-          <div class="form-check ">
-            <input class="form-check-input" type="checkbox" name="skills" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-           HTML
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="skills" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              CSS
-            </label>
-          </div>
-        </div>
-    </div>
-    <button  class="btn btn-primary" id="btn" onclick="clicked()">Submit</button>
-            <button  class="btn btn-danger" onclick="error()">Clear</button>
+            <div class="mb-3 row">
+              <label for="website" class="col-sm-2 col-form-label"
+                >Website</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="url"
+                  class="form-control"
+                  id="website"
+                  placeholder="Website"
+                  required=""
+                />
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="image" class="col-sm-2 col-form-label"
+                >Image Link</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="url"
+                  class="form-control"
+                  id="image"
+                  placeholder="Image Link"
+                  required=""
+                />
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <div class="col-2">Gender</div>
+
+              <div class="col-10">
+                <div class="form-check flex-start">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gender"
+                    id="flexRadioDefault1"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Male
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gender"
+                    id="flexRadioDefault2"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Female
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <div class="col-2">Skills</div>
+              <div class="col-10 radio">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="skills"
+                    value=""
+                    id="java"
+                    checked
+                  />
+                  <label class="form-check-label" for="java"> Java </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="skills"
+                    value=""
+                    id="html"
+                  />
+                  <label class="form-check-label" for="html"> HTML </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="skills"
+                    value=""
+                    id="css"
+                  />
+                  <label class="form-check-label" for="css"> CSS </label>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary" id="btn" onclick="clicked()">
+              Submit
+            </button>
+            <button class="btn btn-danger" onclick="error()">Clear</button>
           </form>
-            
-      </div>
-      
-      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 justify-content-center align-items-center col-style2">
-        <div class="heading">
+        </div>
+
+        <div
+          class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 justify-content-center align-items-center col-style2"
+        >
+          <div class="heading">
             <b>Student Card</b>
-        </div>
-        <div class="container" id="data">
-            
-
-
+          </div>
+          <div class="container" id="data"></div>
         </div>
       </div>
     </div>
-    </div>
-
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="js/parsley.js"></script>
-<script src="./js/index.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/parsley.js"></script>
+  <script src="./js/index.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"
+  ></script>
 </html>
